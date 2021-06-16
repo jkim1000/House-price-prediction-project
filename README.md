@@ -101,24 +101,23 @@ Choosing the optimal model ultimately depends on what we are trying to achieve t
 
 The following are some of the insights gleaned from the outputted feature importances of each model as well as some recommendations for residential real estate buyers and sellers:
 
-**XGBoost: Fireplace, GarageCars, TotalSF are most important**
+**Linear Regression Models: Neighborhood, Foundation, Kitchen quality**
 
-•	Sellers: Consider investing more into installation of a fireplace to fetch higher prices
-•	Buyers: Consider buying houses with no/low-quality basements and excavating/enlarging/improving these yourself if cheaper in the aggregate
+**Buyers**: It should come off as an obvious point but the neighborhood where the house is in matters. Consider buying a house in the ‘high’ neighborhood such as Northridge, Northridge Heights or Stone Brook. ‘Mid’ tier neighborhoods include Timberland, Veenker and Somerset. Furthermore, consider buying houses with a concrete or slab foundation than with a wood or stone foundation as they are positively correlated with a higher sale price.
 
-**Random Forests: OverallQual, TotalArea, Area1stArea2nd, LotFrontage are most important**
+**Sellers**: Since sellers cannot change the neighborhood or the foundation of the house that they live in currently, consider renovating the kitchen to improve the kitchen quality. The overall quality matters as well so consider renovating the house through landscaping or remodeling to improve overall condition of the house.
 
-•	Sellers: Consider improving fireplace quality to fetch higher prices
-•	Buyers: Consider buying houses with no garage and building one yourself if cheaper in the aggregate
+**Random Forests/Gradient Boosting Regressor: TotalArea, Overall quality, Living Room Area**
 
-**Gradient Boosting Regressor: OverallQual, LotArea, BsmtQual & YearBuilt are most important**
+**Buyers**: Consider buying houses that generally have the highest square feet area above ground, especially with ones with the biggest living room area. Having more bathrooms is a plus. If expensive, find houses that can be expanded easily through renovation.
 
-•	Sellers: Consider investing in Central Air conditioning to fetch higher prices
-•	Buyers: Consider buying older houses and remodeling these yourself
+**Sellers**: Consider investing into a porch/patio addition, bumping out the kitchen or adding more bathrooms to expand the square footage of the house. Expanding an existing garage can help drive up the home value, but these renovations are generally quite expensive.
 
-**Linear Models: LotArea, Neighborhood variables are most important**
 
-•	Sellers: Consider building an open porch to increase house value
-•	Buyers: Consider building an open porch yourself to save money if cheaper in the aggregate
+**XGBoost: Fireplace, Garage size, Total square ft area are most important**
+
+**Buyers**: Consider buying houses that generally have the highest square feet area above ground, especially with ones with the biggest living room area. Having more bathrooms is a plus. If expensive, find houses that can be expanded easily through renovation.
+
+**Sellers**: Consider investing more into installation of a fireplace and central air conditioning to fetch higher prices if possible. Otherwise, the same suggestions apply to those given according to radom forests/gradient boosting regressors.
 
 
